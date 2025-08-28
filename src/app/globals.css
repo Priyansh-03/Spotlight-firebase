@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 210 20% 98%;
+    --card: 240 4.8% 9.8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 240 4.8% 9.8%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 45 100% 70%; /* Gold */
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 267 83% 21%; /* Deep Purple */
+    --secondary-foreground: 210 20% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 267 83% 41%; /* Brighter Purple */
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 45 100% 70%;
+    --radius: 0.5rem;
+    --chart-1: 45 100% 70%;
+    --chart-2: 267 83% 41%;
+    --chart-3: 180 80% 40%;
+    --chart-4: 0 80% 60%;
+    --chart-5: 280 80% 60%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 210 20% 98%;
+    --card: 240 4.8% 9.8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 240 4.8% 9.8%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 45 100% 70%; /* Gold */
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 267 83% 21%; /* Deep Purple */
+    --secondary-foreground: 210 20% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 267 83% 41%; /* Brighter Purple */
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 45 100% 70%;
+    --chart-1: 45 100% 70%;
+    --chart-2: 267 83% 41%;
+    --chart-3: 180 80% 40%;
+    --chart-4: 0 80% 60%;
+    --chart-5: 280 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 8% 6%));
+  }
+}
+
+@layer utilities {
+  .animated-gradient-text {
+    background-image: linear-gradient(
+      -45deg,
+      hsl(var(--primary)),
+      #fff,
+      hsl(var(--primary)),
+      hsl(var(--accent))
+    );
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,16 @@
+diff --git a/node_modules/@opentelemetry/exporter-trace-otlp-http/build/esm/platform/node/OTLPTraceExporter.js b/node_modules/@opentelemetry/exporter-trace-otlp-http/build/esm/platform/node/OTLPTraceExporter.js
+index 9231454..8196c8d 100644
+--- a/node_modules/@opentelemetry/exporter-trace-otlp-http/build/esm/platform/node/OTLPTraceExporter.js
++++ b/node_modules/@opentelemetry/exporter-trace-otlp-http/build/esm/platform/node/OTLPTraceExporter.js
+@@ -16,7 +16,7 @@
+  */
+ 
+ import { OTLPExporterNodeBase } from '@opentelemetry/otlp-exporter-base';
+-import { getEnv, baggageUtils } from '@opentelemetry/core';
++import { getEnv, baggageUtils } from '@opentelemetry/core/build/src';
+ import { createExportTraceServiceRequest, } from '@opentelemetry/otlp-transformer';
+-import { VERSION } from '../../version';
++import { VERSION } from '@opentelemetry/core/build/src/version';
+ /**
+  * OTLP Trace Exporter for Node
+  */
