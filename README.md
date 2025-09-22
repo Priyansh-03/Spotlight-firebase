@@ -37,6 +37,20 @@ Using Spotlight is a simple, step by step process.
 
 *   **Easy Editing and Saving**: You have full control to refine the AI's suggestions and save your completed ad campaigns for future use.
 
+## How We Use Generative AI
+
+Generative AI is the engine that powers Spotlight. It acts as your creative partner and marketing strategist at several key moments.
+
+*   **Understanding Your Brand**: The AI reads the Instagram profile's bio and recent posts to learn about the business. It figures out the brand's personality, what it sells, and who its customers might be.
+
+*   **Generating Targeting Keywords**: Instead of you guessing which keywords to use, the AI creates a smart list of interest and behavior keywords that you can use to find audiences on Meta.
+
+*   **Writing Ad Copy**: This is where the AI really shines. It writes multiple unique ads for you. Each ad includes a catchy headline, engaging text, and a description, all designed to meet your campaign goal.
+
+*   **Recommending Audiences**: After finding hundreds of potential audiences on Meta, the AI acts as a filter. It reviews the entire list and recommends the most relevant audiences for your specific business, saving you from having to manually review them all.
+
+*   **Enhancing Your Ideas**: If you provide a brief description of a business, the AI can expand it into a more detailed and professional summary, which then helps it generate even better ads.
+
 ## Technologies We Use
 
 Spotlight is built with modern and powerful technologies to give you a smooth experience.
